@@ -1,0 +1,58 @@
+/* Style inputs */
+input[type=text], input[type = number], select {
+    width: 25%;
+    padding: 7px 14px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  /* #check{
+    line-height: ;
+  } */
+  
+  .entire{
+    background-color: #F2E29F;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif
+  }
+
+  /* Style the submit button */
+  input[type=submit], input[type = button] {
+    width: 25%;
+    background-color: #bc9551;
+    color: white;
+    padding: 14px 20px;
+    border: 2px solid #bc9551;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  
+  #next {
+    width: 25%;
+    background-color: #bc9551;
+    border: 2px solid #bc9551;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  #next:hover{
+    background-color: #a47b35;
+  }
+  
+  #center2 {
+    text-align: center;
+  }
+
+  /* Add a background color to the submit button on mouse-over */
+  input[type=button]:hover {
+    background-color: #a47b35;
+  }
+
+  #displayMol{
+    border: 3px solid #000000;
+  }
+

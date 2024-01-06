@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class = "entire">
+    <h1>
+        <center>Molecule Viewer</center>
+    </h1>
+    <h3> File Upload </h3>
+    <form enctype="multipart/form-data" method="post">
+        <p>
+            <input type="file" id="sdf_file" name="filename" />
+        </p>
+        <p>
+            <h3>Enter A Name You Want For The Molecule:</h3>
+            <input type="text" id="uploadfile" name="file" placeholder="e.g Water"">
+            <br>
+            <input id = "uploadMol" type="button" value="Upload" />
+        </p>
+    </form>
+    <h2>Select Molecules From This List To Display</h2>
+    <form>
+        <select name = "mol" id = "molID2">
+        </select>
+    </form>
+    <br/>
+    <input type="button" id = "display" value="Display" />
+    <div id = "divhide2" style="display: none;">
+        <h3 id = "edittext"></h3>
+        <br>
+        <img id = "displayMol" width="500" height="500">
+    </div>
+    <div id = "divhide" style="display: none;">
+        <h2>Enter an angle to rotate the Molecule(-360 to 360)!</h2>
+        <input type="text" id="rotatechoice" name="file" placeholder="e.g 50" onkeyup="valInput2(this)">
+        <br>
+        <input id = "rotatex" type="button" value="Rotate Along X-Axis" />
+        <input id = "rotatey" type="button" value="Rotate Along Y-Axis" />
+        <input id = "rotatez" type="button" value="Rotate Along Z-Axis" />
+    </div>
+    <br>
+    <br>
+    <div id = "center2">
+        <button onClick="window.location.href = '/';" id="next">Return</button>
+    </div>
+</body>
+
+</html>

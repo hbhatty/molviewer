@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Assignment 4 - Molecule Website</title>
+  </head>
+
+  <body class="entire">
+    <h1 id = "check">
+      <center>Molecule Viewer</center>
+    </h1>
+    <h2>Add an Element</h2>
+    <form method="POST">
+      <label for="elenumber">Enter an element number</label>
+      <br>
+      <input
+        type="number"
+        id="elenumber"
+        name="elenumber"
+        placeholder="e.g 1-118"
+        maxlength="3"
+        onkeyup="valInput2(this)"
+      />
+        <br>
+      <label for="elecode">Enter an element code</label>
+      <br>
+      <input
+        type="text"
+        id="elecode"
+        name="elecode"
+        placeholder="e.g H"
+        maxlength="3"
+        onkeyup="validateInput(this)"
+      />
+      <br>
+      <label for="elename">Enter an element name</label>
+      <br>
+      <input
+        type="text"
+        id="elename"
+        name="elename"
+        placeholder="e.g Hydrogen"
+        onkeyup="validateInput(this)"
+      />
+      <br>
+      <label for="elecol1">Colour Val 1</label>
+      <br>
+      <input
+        type="text"
+        id="elecol1"
+        name="elecol1"
+        maxlength="6"
+        placeholder="e.g FFFFFF"
+        onkeyup="valInput(this)"
+      />
+      <br>
+      <label for="elecol2">Colour Val 2</label>
+      <br>
+      <input
+        type="text"
+        id="elecol2"
+        name="elecol2"
+        maxlength="6"
+        placeholder="e.g FFFFFF"
+        onkeyup="valInput(this)"
+      />
+      <br>
+      <label for="elecol3">Colour Val 3</label>
+      <br>
+      <input
+        type="text"
+        id="elecol3"
+        name="elecol3"
+        maxlength="6"
+        placeholder="e.g FFFFFF"
+        onkeyup="valInput(this)"
+      />
+      <br>
+      <label for="rad">Radius</label>
+      <br>
+      <input type="number" id="rad" name="rad" placeholder="e.g 35" />
+      <br>
+      <br>
+      <input type="button" id="add" value="Add Element" />
+      <br>
+      <br>
+      <h2>Delete an Element</h2>
+      <select name="mol" id="molID"></select>
+      <br>
+      <input type="button" id="delete" value="Delete Element" />
+    </form>
+    <br>
+    <div id="center2">
+      <button onClick="window.location.href = 'sdfpage.html';" id="next">
+        Next
+      </button>
+    </div>
+  </body>
+</html>
